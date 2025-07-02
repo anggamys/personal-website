@@ -35,5 +35,40 @@
       "time": "Feb 2024 - Dec 2024",
       "url": "https://www.linkedin.com/company/veteranrobotics/"
     }
+  ],
+
+  "socials": [
+    {
+      "name": "Email",
+      "url": "mailto:anggayunus139@gmail.com",
+      "ariaLabel": "Email",
+      "icon": "Mail",
+      "color": "#16697a",
+      "hoverColor": "#f7be16"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/anggamys",
+      "ariaLabel": "GitHub",
+      "icon": "Github",
+      "color": "#292929",
+      "hoverColor": "#489fb5"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://linkedin.com/in/moh-angga",
+      "ariaLabel": "LinkedIn",
+      "icon": "Linkedin",
+      "color": "#489fb5",
+      "hoverColor": "#16697a"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://instagram.com/anggamys",
+      "ariaLabel": "Instagram",
+      "icon": "Instagram",
+      "color": "#292929",
+      "hoverColor": "#f7be16"
+    }
   ]
 }
