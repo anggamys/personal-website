@@ -1,0 +1,39 @@
+{
+  "skills": [
+    {
+      "header": "Languages",
+      "items": ["JavaScript", "TypeScript", "Python", "Java"]
+    },
+    {
+      "header": "Frameworks",
+      "items": ["React", "Node.js", "Django", "Spring Boot"]
+    },
+    {
+      "header": "Databases",
+      "items": ["PostgreSQL", "MongoDB", "MySQL"]
+    },
+    {
+      "header": "Tools & Technologies",
+      "items": ["Git", "Docker", "Kubernetes", "AWS"]
+    },
+    {
+      "header": "Soft Skills",
+      "items": ["Problem Solving", "Team Collaboration", "Communication"]
+    }
+  ],
+
+  "experience": [
+    {
+      "company": "Komunitas Robotika dan Sistem Cerdas",
+      "position": "Research Team Lead",
+      "time": "Jan 2025 - Present",
+      "url": "https://www.linkedin.com/company/veteranrobotics/"
+    },
+    {
+      "company": "Komunitas Robotika dan Sistem Cerdas",
+      "position": "Research Intern",
+      "time": "Feb 2024 - Dec 2024",
+      "url": "https://www.linkedin.com/company/veteranrobotics/"
+    }
+  ]
+}
