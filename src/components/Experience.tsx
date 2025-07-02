@@ -1,4 +1,17 @@
-import data from '../constants/data.json';
+import dataJson from '../constants/data.json';
+
+type ExperienceJob = {
+    company: string;
+    position: string;
+    time: string;
+    url: string;
+};
+
+type Data = {
+    experience: ExperienceJob[];
+};
+
+const data = dataJson as Data;
 
 function Experience() {
     return (
@@ -31,7 +44,9 @@ function Experience() {
                                     </div>
                                     <div className="text-[#292929] text-base">{job.position}</div>
                                 </div>
-                                <div className="text-[#489fb5] text-sm sm:text-right mt-2 sm:mt-0">{job.time}</div>
+                                <div className="text-[#489fb5] text-sm sm:text-right mt-2 sm:mt-0">
+                                    {job.time}
+                                </div>
                             </div>
                         ))}
                     </div>

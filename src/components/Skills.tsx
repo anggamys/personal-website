@@ -1,5 +1,16 @@
 import { useState } from 'react';
-import data from '../constants/data.json';
+import dataJson from '../constants/data.json';
+
+type Skill = {
+    header: string;
+    items: string[];
+};
+
+type Data = {
+    skills: Skill[];
+};
+
+const data = dataJson as Data;
 
 function Skills() {
     const [showAll, setShowAll] = useState(false);
