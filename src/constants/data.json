@@ -2,11 +2,11 @@
   "skills": [
     {
       "header": "Languages",
-      "items": ["JavaScript", "TypeScript", "Python", "Java"]
+      "items": ["JavaScript", "TypeScript", "Python", "Java", "C++", "C", "PHP"]
     },
     {
       "header": "Frameworks",
-      "items": ["React", "Node.js", "Django", "Spring Boot"]
+      "items": ["React", "Node.js", "Next.js", "Express", "NestJS", "Nuxt.js", "Flask", "Laravel"]
     },
     {
       "header": "Databases",
@@ -14,11 +14,11 @@
     },
     {
       "header": "Tools & Technologies",
-      "items": ["Git", "Docker", "Kubernetes", "AWS"]
+      "items": ["Git", "Docker", "ROS"]
     },
     {
       "header": "Soft Skills",
-      "items": ["Problem Solving", "Team Collaboration", "Communication"]
+      "items": ["Problem Solving", "Team Collaboration", "Communication", "Adaptability", "Time Management"]
     }
   ],
 
@@ -69,6 +69,39 @@
       "icon": "Instagram",
       "color": "#292929",
       "hoverColor": "#f7be16"
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "Heruka - Autonomous Surface Vehicle",
+      "description": "An autonomous surface vehicle for environmental monitoring.",
+      "used": ["Python", "OpenCV", "TensorFlow"],
+      "media": [
+        {
+          "type": "image",
+          "src": "/projects/heruka.png",
+          "alt": "Heruka Project Demo"
+        }
+      ]
+    },
+    {
+      "name": "Personal Website",
+      "url": "https://github.com/anggamys/personal-website",
+      "description": "Showcasing my projects and skills.",
+      "used": ["HTML", "CSS", "JavaScript", "React", "Tailwind CSS", "Vite", "TypeScript"],
+      "media": [
+        {
+          "type": "image",
+          "src": "/projects/1.png",
+          "alt": "Personal Website Demo 1"
+        },
+        {
+          "type": "image",
+          "src": "/projects/2.png",
+          "alt": "Personal Website Demo 2"
+        }
+      ]
     }
   ]
 }
