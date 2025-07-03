@@ -70,5 +70,31 @@
       "color": "#292929",
       "hoverColor": "#f7be16"
     }
+  ],
+
+  "projects": [
+    {
+      "name": "Robot Vision",
+      "url": "https://github.com/anggamys/robot-vision",
+      "description": "Real-time object detection for robotics using YOLOv5.",
+      "used": ["Python", "YOLOv5", "OpenCV"],
+      "media": [
+        {
+          "type": "image",
+          "src": "/img/robot-vision-demo1.gif",
+          "alt": "Robot Vision Demo 1"
+        },
+        {
+          "type": "image",
+          "src": "/img/robot-vision-demo2.png",
+          "alt": "Robot Vision Demo 2"
+        },
+        {
+          "type": "video",
+          "src": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+          "alt": "Robot Vision Demo Video"
+        }
+      ]
+    }
   ]
 }
