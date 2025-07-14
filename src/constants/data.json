@@ -79,9 +79,14 @@
       "used": ["Python", "OpenCV", "TensorFlow"],
       "media": [
         {
-          "type": "image",
-          "src": "/projects/heruka.png",
-          "alt": "Heruka Project Demo"
+          "type": "pdf",
+          "src": "https://drive.google.com/file/d/1P2pKvBP0SNwOC3rt5S-UJJKlvduzIy9v/view?usp=drive_link",
+          "alt": "Sertifikat Juara Dua Divisi ASV"
+        },
+        {
+          "type": "video",
+          "src": "https://youtu.be/pUDzF_EE4LU?si=aRpaFOX0bUfBrzz5",
+          "alt": "Video Demonstration of Heruka"
         }
       ]
     },
