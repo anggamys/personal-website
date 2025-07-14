@@ -9,7 +9,7 @@ import BackToTopButton from "./components/BackToTopButton";
 
 function App() {
   return (
-    <>
+    <main className="bg-[#e8f1f2] text-[#292929] font-sans min-h-screen">
       <Introduction />
       <Background />
       <Skills />
@@ -17,7 +17,7 @@ function App() {
       <Project />
       <BackToTopButton />
       <Footer />
-    </>
+    </main>
   );
 }
 

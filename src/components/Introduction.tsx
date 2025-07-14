@@ -24,24 +24,12 @@ function Introduction() {
         <section className="min-h-screen flex items-center px-4 bg-[#e8f1f2]">
             <div className="w-full max-w-3xl pl-0 sm:pl-12">
                 <h1 className="text-3xl sm:text-4xl font-bold mb-8 text-[#16697a] text-left tracking-tight flex items-center gap-2">
-                    Hello!
-                    <span
-                        role="img"
-                        aria-label="wave"
-                        className="inline-block animate-wave origin-[70%_70%]"
-                        style={{
-                            display: 'inline-block',
-                            transformOrigin: '70% 70%',
-                        }}
-                    >
-                        👋
-                    </span>
+                    👋 Hi, I'm Angga
                 </h1>
-
                 <h2 className="text-2xl sm:text-3xl font-normal text-[#292929] mb-8 leading-snug text-left">
-                    I’m <span className="font-bold text-[#16697a]">Moh Angga</span>, a robotics engineer and backend developer.
+                    <span className="font-bold text-[#16697a]">Robotics & AI Engineer</span> | <span className="font-bold text-[#489fb5]">Backend Systems Architect</span>
                     <br /><br />
-                    I build scalable systems and intelligent machines that drive innovation.
+                    I build smart machines and scalable systems that turn ambitious ideas into reality. Let's connect and create something extraordinary!
                 </h2>
 
                 <div className="mt-12 flex flex-col sm:flex-row items-start gap-2 sm:gap-4">
