@@ -1,42 +1,27 @@
 {
   "skills": [
-    {
-      "header": "Languages",
-      "items": ["JavaScript", "TypeScript", "Python", "Java", "C++", "C", "PHP"]
-    },
-    {
-      "header": "Frameworks",
-      "items": ["React", "Node.js", "Next.js", "Express", "NestJS", "Nuxt.js", "Flask", "Laravel"]
-    },
-    {
-      "header": "Databases",
-      "items": ["PostgreSQL", "MongoDB", "MySQL"]
-    },
-    {
-      "header": "Tools & Technologies",
-      "items": ["Git", "Docker", "ROS"]
-    },
-    {
-      "header": "Soft Skills",
-      "items": ["Problem Solving", "Team Collaboration", "Communication", "Adaptability", "Time Management"]
-    }
+    { "header": "Languages", "items": ["JavaScript", "TypeScript", "Python", "Java", "C++", "C", "PHP"] },
+    { "header": "Frameworks", "items": ["React", "Node.js", "Next.js", "Express", "NestJS", "Nuxt.js", "Flask", "Laravel"] },
+    { "header": "Databases", "items": ["PostgreSQL", "MongoDB", "MySQL"] },
+    { "header": "Tools & Technologies", "items": ["Git", "Docker", "ROS"] },
+    { "header": "Soft Skills", "items": ["Problem Solving", "Team Collaboration", "Communication", "Adaptability", "Time Management"] }
   ],
-
   "experience": [
     {
+      "id": "lead-2025",
       "company": "Komunitas Robotika dan Sistem Cerdas",
       "position": "Research Team Lead",
       "time": "Jan 2025 - Present",
       "url": "https://www.linkedin.com/company/veteranrobotics/"
     },
     {
+      "id": "intern-2024",
       "company": "Komunitas Robotika dan Sistem Cerdas",
       "position": "Research Intern",
       "time": "Feb 2024 - Dec 2024",
       "url": "https://www.linkedin.com/company/veteranrobotics/"
     }
   ],
-
   "socials": [
     {
       "name": "Email",
@@ -51,27 +36,26 @@
       "url": "https://github.com/anggamys",
       "ariaLabel": "GitHub",
       "icon": "Github",
-      "color": "#292929",
-      "hoverColor": "#489fb5"
+      "color": "#16697a",
+      "hoverColor": "#f7be16"
     },
     {
       "name": "LinkedIn",
       "url": "https://linkedin.com/in/moh-angga",
       "ariaLabel": "LinkedIn",
       "icon": "Linkedin",
-      "color": "#489fb5",
-      "hoverColor": "#16697a"
+      "color": "#16697a",
+      "hoverColor": "#f7be16"
     },
     {
       "name": "Instagram",
       "url": "https://instagram.com/anggamys",
       "ariaLabel": "Instagram",
       "icon": "Instagram",
-      "color": "#292929",
+      "color": "#16697a",
       "hoverColor": "#f7be16"
     }
   ],
-
   "projects": [
     {
       "name": "Heruka - Autonomous Surface Vehicle",
