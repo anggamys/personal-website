@@ -97,16 +97,20 @@ export default function Projects() {
                             )}
                             {openProject === project.name && project.media && (
                                 <div className="mt-5 flex flex-wrap gap-4">
-                                    {project.media.map((media) => {
+                                    {project.media.map((media, index) => {
                                         // IMAGE
                                         if (media.type === "image") {
                                             return (
                                                 <img
-                                                    key={media.src}
+                                                    key={`${media.src}-${index}`}
                                                     src={media.src}
                                                     alt={media.alt}
                                                     loading="lazy"
-                                                    className="rounded-lg shadow max-w-xs border border-[#e8f1f2] dark:border-[#303d40] bg-white dark:bg-[#303d40]"
+                                                    className="rounded-lg shadow max-w-xs border border-[#e8f1f2] dark:border-[#303d40] bg-white dark:bg-[#303d40] transition-transform hover:scale-105"
+                                                    onError={(e) => {
+                                                        const target = e.target as HTMLImageElement;
+                                                        target.style.display = 'none';
+                                                    }}
                                                 />
                                             );
                                         }
@@ -118,12 +122,13 @@ export default function Projects() {
                                                 : media.src;
                                             return (
                                                 <iframe
-                                                    key={media.src}
+                                                    key={`${media.src}-${index}`}
                                                     src={embedUrl}
                                                     title={media.alt}
                                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                                     allowFullScreen
-                                                    className="rounded-lg border border-[#e8f1f2] dark:border-[#303d40] bg-white dark:bg-[#303d40] w-80 h-44"
+                                                    className="rounded-lg border border-[#e8f1f2] dark:border-[#303d40] bg-white dark:bg-[#303d40] w-80 h-44 transition-transform hover:scale-105"
+                                                    loading="lazy"
                                                 />
                                             );
                                         }
@@ -132,12 +137,13 @@ export default function Projects() {
                                             const embedUrl = toGoogleDrivePreview(media.src);
                                             return (
                                                 <iframe
-                                                    key={media.src}
+                                                    key={`${media.src}-${index}`}
                                                     src={embedUrl}
                                                     title={media.alt}
                                                     allow="autoplay; encrypted-media"
                                                     allowFullScreen
-                                                    className="rounded-lg border border-[#e8f1f2] dark:border-[#303d40] bg-white dark:bg-[#303d40] w-80 h-44"
+                                                    className="rounded-lg border border-[#e8f1f2] dark:border-[#303d40] bg-white dark:bg-[#303d40] w-80 h-44 transition-transform hover:scale-105"
+                                                    loading="lazy"
                                                 />
                                             );
                                         }
@@ -145,12 +151,15 @@ export default function Projects() {
                                         if (media.type === "pdf") {
                                             return (
                                                 <a
-                                                    key={media.src}
+                                                    key={`${media.src}-${index}`}
                                                     href={media.src}
                                                     target="_blank"
                                                     rel="noopener noreferrer"
-                                                    className="inline-block text-[#16697a] dark:text-[#f7be16] underline"
+                                                    className="inline-flex items-center gap-2 px-4 py-2 bg-[#f7be16]/10 dark:bg-[#303d40] text-[#16697a] dark:text-[#f7be16] rounded-lg border border-[#f7be16] hover:bg-[#f7be16]/20 transition-colors font-semibold"
                                                 >
+                                                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                                        <path d="M12 2L13.09 8.26L14 2L15.09 8.26L16 2L17.09 8.26L18 2L19.09 8.26L20 2V22H4V2L5.91 8.26L7 2L8.09 8.26L9 2L10.09 8.26L11 2L12.09 8.26Z" />
+                                                    </svg>
                                                     {media.alt || "View PDF"}
                                                 </a>
                                             );
@@ -159,19 +168,20 @@ export default function Projects() {
                                         if (media.type === "video") {
                                             return (
                                                 <iframe
-                                                    key={media.src}
+                                                    key={`${media.src}-${index}`}
                                                     src={media.src}
                                                     title={media.alt}
                                                     allow="autoplay; encrypted-media"
                                                     allowFullScreen
-                                                    className="rounded-lg border border-[#e8f1f2] dark:border-[#303d40] bg-white dark:bg-[#303d40] w-80 h-44"
+                                                    className="rounded-lg border border-[#e8f1f2] dark:border-[#303d40] bg-white dark:bg-[#303d40] w-80 h-44 transition-transform hover:scale-105"
+                                                    loading="lazy"
                                                 />
                                             );
                                         }
                                         // fallback
                                         return (
-                                            <span key={media.src} className="text-xs text-[#292929] dark:text-[#f7be16]">
-                                                [Unknown media type]
+                                            <span key={`${media.src}-${index}`} className="text-sm text-[#292929] dark:text-[#f7be16] p-2 bg-[#f9fafb] dark:bg-[#303d40] rounded border">
+                                                [Unsupported media type: {media.type}]
                                             </span>
                                         );
                                     })}

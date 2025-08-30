@@ -17,7 +17,7 @@ export default function Introduction() {
         >
             <div className="w-full max-w-3xl pl-0 sm:pl-12">
                 <h1 className="text-4xl font-bold mb-6 text-[#16697a] dark:text-[#f7be16] flex items-center gap-2">
-                    <span role="img" aria-label="Waving hand">👋</span> Hi, I'm Angga
+                    <span role="img" aria-label="Waving hand" className="animate-wave">👋</span> Hi, I'm Angga
                 </h1>
                 <h2 className="text-2xl font-normal text-[#292929] dark:text-[#e8f1f2] mb-8 leading-snug">
                     <span className="font-bold text-[#16697a] dark:text-[#f7be16]">Robotics & AI Engineer</span> |{" "}

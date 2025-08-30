@@ -1,4 +1,8 @@
-export type Skill = { header: string; items: string[] };
+export type Skill = {
+  header: string;
+  items: string[];
+};
+
 export type Experience = {
   id: string;
   company: string;
@@ -6,11 +10,13 @@ export type Experience = {
   time: string;
   url: string;
 };
+
 export type ProjectMedia = {
   type: 'image' | 'video' | 'pdf' | string;
   src: string;
   alt: string;
 };
+
 export type Project = {
   name: string;
   url?: string;
@@ -18,6 +24,7 @@ export type Project = {
   used: string[];
   media?: ProjectMedia[];
 };
+
 export type Social = {
   name: string;
   url: string;
